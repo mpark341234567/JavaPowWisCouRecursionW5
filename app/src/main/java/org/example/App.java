@@ -22,5 +22,13 @@ public class App {
         System.out.println(calculator.subtract(1, 1)); // This should print out 0
         System.out.println(calculator.subtract(2, 3)); // This should print out -3
         System.out.println(calculator.subtract(4, 2)); // This should print out 7 
+
+        System.out.println(calculator.multiply(1, 1)); // This should print out 1
+        System.out.println(calculator.multiply(2, 3)); // This should print out 18
+        System.out.println(calculator.multiply(4, 2)); // This should print out 30 
+
+        System.out.println(calculator.divide(1, 1)); // This should print out 1.0
+        System.out.println(calculator.divide(2, 3)); // This should print out 0.5
+        System.out.println(calculator.divide(4, 2)); // This should print out ~3.33
     }
 }

@@ -30,5 +30,9 @@ public class App {
         System.out.println(calculator.divide(1, 1)); // This should print out 1.0
         System.out.println(calculator.divide(2, 3)); // This should print out 0.5
         System.out.println(calculator.divide(4, 2)); // This should print out ~3.33
+
+        System.out.println(calculator.sequence(2)); // This should print out [1, 3]
+        System.out.println(calculator.sequence(4));// This should print out [1, 3, 6, 10]
+        System.out.println(calculator.sequence(7));// This should print out [1, 3, 6, 10, 15, 21, 28]
     }
 }

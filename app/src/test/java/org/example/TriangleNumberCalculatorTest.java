@@ -2,6 +2,8 @@ package org.example;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class TriangleNumberCalculatorTest {
     @Test
@@ -38,5 +40,12 @@ public class TriangleNumberCalculatorTest {
         assertEquals(1.0, triangleNumberCalculator.divide(1,1), 0.01);
         assertEquals(0.5, triangleNumberCalculator.divide(2,3), 0.01);
         assertEquals(3.33, triangleNumberCalculator.divide(4,2), 0.01);
+    }
+    @Test 
+    void sequenceWorks(){
+        TriangleNumberCalculator triangleNumberCalculator = new TriangleNumberCalculator();
+        assertEquals(new ArrayList<Integer>(Arrays.asList(1, 3)), triangleNumberCalculator.sequence(2));
+        assertEquals(new ArrayList<Integer>(Arrays.asList(1, 3, 6, 10)), triangleNumberCalculator.sequence(4));
+        assertEquals(new ArrayList<Integer>(Arrays.asList(1, 3, 6, 10, 15, 21, 28)), triangleNumberCalculator.sequence(7));
     }
 }
